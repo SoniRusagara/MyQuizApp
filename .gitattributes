@@ -1,0 +1,45 @@
+
+# Normalize text files; let Git handle line endings smartly
+* text=auto
+
+# Force LF for Unix-y scripts and source files
+*.sh        text eol=lf
+gradlew     text eol=lf
+*.kt        text eol=lf
+*.kts       text eol=lf
+*.java      text eol=lf
+*.xml       text eol=lf
+*.gradle    text eol=lf
+*.md        text eol=lf
+*.pro       text eol=lf
+*.properties text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+
+# Keep CRLF for Windows batch scripts
+*.bat       text eol=crlf
+gradlew.bat text eol=crlf
+
+# Treat binaries as-is (no line ending normalization)
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.jar   binary
+*.aab   binary
+*.apk   binary
+*.keystore binary
+*.jks   binary
+*.so    binary
+*.ttf   binary
+*.otf   binary
+*.pdf   binary
+*.ico   binary
+*.bin   binary
+*.db    binary
+*.sqlite binary
+*.wav   binary
+*.mp3   binary
+*.mp4   binary
+
